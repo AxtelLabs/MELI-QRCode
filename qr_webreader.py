@@ -35,7 +35,7 @@ while True:
         # Bounding box alrededor del barcode
         (x, y, w, h) = barcode.rect
         cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 0, 255), 2)
-        #converción a string
+        #conversión a string
         barcodeData = barcode.data.decode("utf-8")
         barcodeType = barcode.type
         text = "{} ({})".format(barcodeData, barcodeType)
